@@ -12,7 +12,7 @@ RUN pip install poetry
 WORKDIR /app
 
 # Copy the shell script into the container
-COPY setup-repo.sh /usr/local/bin/setup.sh
+COPY setup.sh /usr/local/bin/setup.sh
 RUN chmod +x /usr/local/bin/setup.sh
 
 # Run the shell script to handle repository cloning or pulling
