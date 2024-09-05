@@ -2,8 +2,8 @@
 FROM python:3.9
 
 # Install CA certificates, curl, and git
-# RUN apt-get update && \
-#     apt-get install -y ca-certificates curl git
+RUN apt-get update && \
+    apt-get install -y ca-certificates curl git
 
 # Install Poetry
 RUN pip install poetry
